@@ -1,0 +1,111 @@
+html, body{
+    min-width:290px;
+    color:#4d4e53;
+    background-color:#ffffff;
+    font-family:'Open Sans', Arial, sans-serif;
+    line-height: 1,5;
+
+}
+
+#navbar{
+    position:fixed;  /*voglio che la barra con i contenuti sia fissa*/
+    min-width:290px;
+    top:0px;
+    left:0px;
+    width:300px;
+    height:100%;
+    border-right:solid; /*creo una linea verticale che delimita la barra con i contenuti */
+    border-color:grey;
+}
+
+#navbar li{
+    border-top: 1px solid; /*Ogni contenuto avrà un margine definito da linee separatorie*/
+    list-style:none;
+    position: relative;
+    width: 100%;
+    color:#4d4e53;
+}
+
+#navbar ul{
+    height:100%;
+    padding:0;
+    overflow-x:auto;
+    overflow-y: hidden;
+}
+
+#main-doc{
+    position:absolute;
+    margin-left:310px;
+    padding:30px;
+    margin-bottom: 100px;
+}
+
+article{
+    color:#4d4e53;
+    margin:20px;
+    font-size:0.9em;
+}
+
+section li{
+    margin: 10px 0px 0px 20px;
+}
+
+#main-doc header{
+    color:black;
+    text-align:left;
+    font-size:2em;
+    margin:0px;
+}
+
+code{
+    display: block;
+    position: relative;
+    text-align: left;
+    font-weight:bolder;
+    background-color: black;
+    color:green;
+    padding:10px;
+    margin:10px;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;  
+}
+
+#navbar a{
+    display: block;
+    padding:10px 30px;
+    color:grey;
+    text-decoration: none;
+
+}
+#navbar a:hover, a:active{
+    text-decoration: underline overline;
+    color:orangered;
+    background-color: black;
+
+}
+
+
+
+#navbar header{
+    color:black;
+    font-size: 2em;
+}
+
+@media only screen and (max-width:400px){
+    #main-doc{
+        margin-left:-10px;
+    }
+    code{
+        margin-left: -20px;
+        width:100%;
+        padding:20px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 230px;
+    }
+}
+
+#type-num li{
+    list-style-type: decimal;
+}
