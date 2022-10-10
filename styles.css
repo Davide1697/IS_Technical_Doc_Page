@@ -62,8 +62,8 @@ code{
     position: relative;
     text-align: left;
     font-weight:bolder;
-    background-color: black;
-    color:green;
+    background-color: #f7f7f7;
+    color:rgba(0, 0, 0, 0.315);
     padding:10px;
     margin:10px;
     word-break: normal;
@@ -78,12 +78,7 @@ code{
     text-decoration: none;
 
 }
-#navbar a:hover, a:active{
-    text-decoration: underline overline;
-    color:orangered;
-    background-color: black;
 
-}
 
 
 
@@ -92,7 +87,7 @@ code{
     font-size: 2em;
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:700px){
     #main-doc{
         margin-left:-10px;
     }
@@ -104,8 +99,13 @@ code{
         padding-right: 45px;
         min-width: 230px;
     }
+
+  #navbar{
+    background-color: white;
+    position: absolute;  
+    top:0;
+    padding: 0;
+    margin: 0;
+} 
 }
 
-#type-num li{
-    list-style-type: decimal;
-}
