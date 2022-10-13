@@ -7,6 +7,11 @@ html, body{
 
 }
 
+.js-documentation{
+    text-align: center;
+    padding-top: 15px;
+}
+
 #navbar{
     position:fixed;  /*voglio che la barra con i contenuti sia fissa*/
     min-width:290px;
